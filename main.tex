@@ -1,0 +1,39 @@
+\documentclass[11pt]{report}
+
+% Version
+\newcommand{\version}{V1.2}
+
+\include{package}
+
+\begin{document}
+
+%Page de garde
+\include{title_page}
+
+%Table des matières
+\dominitoc
+\tableofcontents
+
+%CONTENU
+
+\include{SEQ4}
+\include{SEQ5}
+
+%infos
+\begin{comment}
+%Table des matieres par chapitre
+\chapter{Title}
+\minitoc
+
+%Insertion de code
+https://fr.overleaf.com/learn/latex/Code_listing
+\end{comment}
+
+%decommenter pour utiliser une bibliographie
+\begin{comment}
+%Bibliographie
+\bibliographystyle{IEEEtran}
+\bibliography{main}
+\end{comment}
+
+\end{document}
